@@ -14,43 +14,35 @@
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="You_Are_Awesome__1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNa-n3-WJD">
-                                <rect key="frame" x="50" y="239" width="104" height="30"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2ni-DP-r3h">
+                                <rect key="frame" x="20" y="277" width="388" height="620"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNa-n3-WJD">
+                                <rect key="frame" x="50" y="239" width="328" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Show Message"/>
                                 <connections>
                                     <action selector="messageButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UpZ-86-6k9"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2ni-DP-r3h">
-                                <rect key="frame" x="20" y="277" width="388" height="620"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="620" id="QKL-Zr-K98"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="thg-HD-YqN">
-                                <rect key="frame" x="83" y="57" width="263" height="162"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="162" id="vYk-dO-O6e"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Placeholder Text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="thg-HD-YqN">
+                                <rect key="frame" x="83" y="57" width="262" height="162"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZSC-t5-Eyy">
+                                <rect key="frame" x="94" y="91" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="thg-HD-YqN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="83" id="I6H-AC-1yO"/>
-                            <constraint firstItem="QNa-n3-WJD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="LPL-KQ-FEX"/>
-                            <constraint firstItem="2ni-DP-r3h" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="MDv-K5-1JO"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="2ni-DP-r3h" secondAttribute="bottom" constant="-5" id="PFa-ni-KKb"/>
-                            <constraint firstItem="thg-HD-YqN" firstAttribute="centerX" secondItem="2ni-DP-r3h" secondAttribute="centerX" id="Yum-qe-ckw"/>
-                            <constraint firstItem="thg-HD-YqN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iep-Bu-fXY"/>
-                            <constraint firstItem="thg-HD-YqN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="13" id="llc-9G-ouc"/>
-                            <constraint firstItem="2ni-DP-r3h" firstAttribute="top" secondItem="QNa-n3-WJD" secondAttribute="bottom" constant="8" id="rFX-IU-gpl"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="2ni-DP-r3h" id="p4Y-02-sne"/>
