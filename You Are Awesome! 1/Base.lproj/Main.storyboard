@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,33 +13,54 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="You_Are_Awesome__1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uzp-Ch-l8X">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="44" width="390" height="766"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="thg-HD-YqN">
-                                        <rect key="frame" x="41" y="8" width="291" height="85"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Francisco Machado" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="thg-HD-YqN">
+                                        <rect key="frame" x="41" y="8" width="306" height="85"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="21"/>
+                                        <color key="textColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="2ni-DP-r3h">
-                                        <rect key="frame" x="8" y="206" width="359" height="453"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="napa" id="2ni-DP-r3h">
+                                        <rect key="frame" x="7" y="101" width="374" height="308"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNa-n3-WJD">
-                                        <rect key="frame" x="96" y="139" width="178" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Show Message"/>
-                                        <connections>
-                                            <action selector="messageButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UpZ-86-6k9"/>
-                                        </connections>
-                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Visit Magestic Napa Valley Napa, California" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="q2k-Xq-l7U">
+                                        <rect key="frame" x="41" y="426" width="306" height="66.333333333333314"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="66.333333333333329" id="MxR-Kf-9fd"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.58105844259999995" green="0.12855249639999999" blue="0.57453137639999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ffg-qf-DHO">
+                                        <rect key="frame" x="41" y="522" width="306" height="244"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <string key="text">According to Wikipedia, "Napa County wine is wine made in Napa County, California, United States. County names in the United States automatically qualify as legal appellations of origin for wine produced from grapes grown in that county and do not require registration with the United States Department of the Treasury Alcohol and Tobacco Tax and Trade Bureau.[2]." Wikipedia accessed March 17, 2021.</string>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="2ni-DP-r3h" firstAttribute="top" secondItem="thg-HD-YqN" secondAttribute="bottom" constant="8" id="6Qv-f5-p5M"/>
+                                    <constraint firstItem="ffg-qf-DHO" firstAttribute="leading" secondItem="q2k-Xq-l7U" secondAttribute="leading" id="8WL-bR-mMS"/>
+                                    <constraint firstItem="q2k-Xq-l7U" firstAttribute="centerX" secondItem="2ni-DP-r3h" secondAttribute="centerX" id="BPb-vo-5Bg"/>
+                                    <constraint firstItem="thg-HD-YqN" firstAttribute="leading" secondItem="q2k-Xq-l7U" secondAttribute="leading" id="BRl-Cw-zqn"/>
+                                    <constraint firstItem="ffg-qf-DHO" firstAttribute="top" secondItem="q2k-Xq-l7U" secondAttribute="bottom" constant="29.666666666666686" id="DbS-fg-Jzt"/>
+                                    <constraint firstItem="ffg-qf-DHO" firstAttribute="trailing" secondItem="q2k-Xq-l7U" secondAttribute="trailing" id="P8N-1w-N8R"/>
+                                    <constraint firstItem="thg-HD-YqN" firstAttribute="trailing" secondItem="q2k-Xq-l7U" secondAttribute="trailing" id="XyH-6m-yeB"/>
+                                    <constraint firstAttribute="bottom" secondItem="ffg-qf-DHO" secondAttribute="bottom" id="bcw-ZD-alj"/>
+                                    <constraint firstItem="thg-HD-YqN" firstAttribute="top" secondItem="uzp-Ch-l8X" secondAttribute="topMargin" id="czA-6p-9Yh"/>
+                                    <constraint firstItem="thg-HD-YqN" firstAttribute="leading" secondItem="uzp-Ch-l8X" secondAttribute="leading" constant="41" id="gua-i1-zTS"/>
+                                    <constraint firstItem="q2k-Xq-l7U" firstAttribute="top" secondItem="2ni-DP-r3h" secondAttribute="bottom" constant="17" id="oaG-da-6IZ"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -58,10 +79,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="16.800000000000001" y="93.103448275862078"/>
+            <point key="canvasLocation" x="15.384615384615383" y="92.417061611374407"/>
         </scene>
     </scenes>
     <resources>
+        <image name="napa" width="292" height="172"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
